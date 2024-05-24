@@ -1,0 +1,11 @@
+.w-full {
+  width: 100%;
+}
+
+.app-wrapper {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}

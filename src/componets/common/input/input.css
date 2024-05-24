@@ -1,0 +1,48 @@
+.form-group {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+input,
+textarea {
+  font-size: 15px;
+  padding: 13px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #595964;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: #4c4c55;
+  background-color: #fff;
+  font-size: 15px;
+  line-height: 14px;
+}
+
+/* .form-group.focused label,
+input:not(:placeholder-shown) + label {
+  top: 0;
+  padding: 0 4px;
+  font-size: 11px;
+} */
+
+.form-group.focused label,
+.form-group:focus-within label,
+input:not(:placeholder-shown) + label {
+  top: 0;
+  padding: 0 4px;
+  font-size: 11px;
+}

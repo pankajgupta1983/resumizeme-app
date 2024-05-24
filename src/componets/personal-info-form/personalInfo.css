@@ -1,0 +1,75 @@
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  width: calc(50% - 12px);
+}
+
+.input-wrapper.address-wrapper {
+  width: 100%;
+}
+
+.terms-condition {
+  font-size: 15px;
+  line-height: 22px;
+  color: #4c4c55;
+  font-family: "Gilroy-Medium", sans-serif;
+  margin: 0 0 16px;
+}
+
+.terms-condition a {
+  color: #1688fe;
+  text-decoration: none;
+}
+
+.submit-btn {
+  background-color: #1688fe;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  max-width: 170px;
+  width: 100%;
+  border: none;
+}
+
+.personal-info-footer {
+  font-size: 15px;
+  line-height: 22px;
+  color: #4c4c55;
+}
+
+.personal-info-footer a {
+  color: #1688fe;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-img {
+    order: 1;
+    margin: 0 auto;
+  }
+  .personal-info-form-wrapper form {
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .personal-info-form-wrapper {
+    flex-direction: column;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .input-wrapper {
+    width: 100%;
+  }
+  .submit-btn {
+    max-width: 100%;
+  }
+}
